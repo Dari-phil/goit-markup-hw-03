@@ -48,11 +48,28 @@ button {
   padding-right: 15px;
   margin: 0 auto;
 }
+img {
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* !------------------HEADER------------------ */
 
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  border-bottom: 1px solid #e7e9fc
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-container {
   display: flex;
@@ -61,7 +78,6 @@ button {
 .header-navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -71,6 +87,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 .header-logo-span {
   color: var(--Dark-color);
@@ -114,10 +131,10 @@ button {
 
 .hero {
   background-color: var(--Dark-color);
-}
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
+}
+.hero-container {
 }
 .hero-title {
   color: var(--White-background-color);
@@ -137,8 +154,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: var(--Primary-Brand-color);
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
   margin: 0 auto;
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -156,6 +176,7 @@ button {
   gap: 24px;
 }
 .advantages-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .advantages-subtitle {
   color: var(--Dark-color);
@@ -163,7 +184,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .advantages-item-text {
   font-size: 16px;
@@ -208,6 +229,11 @@ button {
   padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
+.team-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
 .team-subtitle {
   color: var(--Dark-color);
   text-align: center;
@@ -215,8 +241,7 @@ button {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .team-list-text {
   text-align: center;
@@ -237,7 +262,7 @@ button {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .filters-btn {
   font-family: inherit;
@@ -250,11 +275,13 @@ button {
   background-color: var(--Light-color);
   padding: 12px 24px;
   border-radius: 4px;
+  border: 1px solid var(--Accent-color)
 }
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--White-background-color);
   background-color: var(--Pressed-state-color);
+  border: 1px solid transparent;
 }
 .projects-list {
   display: flex;
@@ -266,23 +293,23 @@ button {
 }
 .projects-item-link {
 }
+.projects-item-container {
+  padding: 32px 16px;
+  border: 1px solid var(--Accent-color);
+  border-top: none;
+}
 .projects-item-subtitle {
   color: var(--Dark-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-bottom: 8px;
 }
 .projects-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 /* !------------------FOOTER------------------ */
@@ -295,11 +322,13 @@ button {
 .footer-logo {
   font-family: Raleway, sans-serif;
   color: var(--Primary-Brand-color);
+  display: inline-block;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
 }
 .footer-logo-span {
   color: var(--Light-color);
@@ -310,5 +339,4 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  padding-top: 18px;
 }

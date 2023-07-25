@@ -75,8 +75,6 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -101,6 +99,8 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address {
   font-style: normal;

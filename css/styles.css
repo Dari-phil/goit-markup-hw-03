@@ -226,7 +226,6 @@ img {
 }
 .team-list-item {
   background: var(--White-background-color);
-  padding-bottom: 32px;
   border-radius: 0px 0px 4px 4px;
 }
 .team-container {
@@ -288,7 +287,6 @@ img {
   gap: 48px 24px;
 }
 .projects-list-item {
-  padding-bottom: 32px;
 }
 .projects-item-link {
 }

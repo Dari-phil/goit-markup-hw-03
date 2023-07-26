@@ -94,6 +94,7 @@ img {
   gap: 40px;
 }
 .header-menu-item {
+  display: block;
   color: var(--Dark-color);
   font-size: 16px;
   font-weight: 500;
